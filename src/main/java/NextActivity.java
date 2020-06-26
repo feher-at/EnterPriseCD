@@ -1,4 +1,4 @@
-public class CustomActivity implements Activity{
+public class NextActivity implements Activity{
     @Override
     public void activate() {
 
