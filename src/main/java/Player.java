@@ -14,13 +14,13 @@ public class Player {
     public void start(){
 
     }
-//    public void setWriter(Writer){
-//
-//    }
-//    public void setCd(Cd){
-//
-//    }
-//    public void setMode(PlayerMode){
-//
-//    }
+   public void setWriter(Writer writer){
+
+   }
+   public void setCd(Cd cd){
+
+   }
+   public void setMode(PlayerMode playerMode){
+
+    }
 }

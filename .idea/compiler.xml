@@ -9,5 +9,8 @@
         <module name="EnterPriseCd" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="EnterPriseCd" target="14.0.1" />
+    </bytecodeTargetLevel>
   </component>
 </project>
