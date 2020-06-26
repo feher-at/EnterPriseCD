@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 abstract class Cd {
-    private int limit;
-    private ArrayList<Song> songs;
+    protected int limit;
+    protected ArrayList<Song> songs;
 
 
     public int getLimit() {
@@ -13,18 +13,11 @@ abstract class Cd {
         this.limit = limit;
     }
 
-    public ArrayList<Song> getSongs() {
+    public ArrayList<Song> getTracks() {
         return songs;
     }
+    abstract void addTracks(Song song);
 
-    public void setSongs(ArrayList<Song> songs) {
-        this.songs = songs;
-    }
-
-    public Cd(int limit, ArrayList<Song> songs) {
-        this.limit = limit;
-        this.songs = songs;
-    }
 
 
 }
