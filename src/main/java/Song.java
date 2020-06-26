@@ -1,4 +1,10 @@
-public class Song {
+abstract class Song {
 
-    String title;
+    protected String title;
+
+
+    public String getTitle() {
+        return title;
+    }
+
 }

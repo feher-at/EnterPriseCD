@@ -1,6 +1,7 @@
-public class AudioCd extends Cd {
+public class Mp3Cd extends Cd{
 
-    public AudioCd(String Name)  {
+
+    public Mp3Cd(String Name) {
         this.name = Name;
     }
 

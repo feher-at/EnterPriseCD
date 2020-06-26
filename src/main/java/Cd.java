@@ -3,6 +3,7 @@ import java.util.ArrayList;
 abstract class Cd {
     protected int limit;
     protected ArrayList<Song> songs;
+    protected String name;
 
 
     public int getLimit() {
