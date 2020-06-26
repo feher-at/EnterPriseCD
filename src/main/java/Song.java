@@ -6,5 +6,6 @@ abstract class Song {
     public String getTitle() {
         return title;
     }
+    public abstract int getLenght();
 
 }

@@ -1,8 +1,16 @@
-public class AudioSong extends Cd {
+public class AudioSong extends Song {
+    private float samplingFrequency;
 
+    public float getSamplingFrequency() {
+        return samplingFrequency;
+    }
+
+    public AudioSong(float samplingFrequency) {
+        this.samplingFrequency = samplingFrequency;
+    }
 
     @Override
-    void addTracks(Song song) {
-        songs.add(song);
+    public int getLenght() {
+        return 0;
     }
 }
