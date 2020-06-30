@@ -14,4 +14,8 @@ public class MenuItem {
     public void setActivity(Activity activity) {
         this.activity = activity;
     }
+
+    public String getTitle() { return title;}
+
+
 }

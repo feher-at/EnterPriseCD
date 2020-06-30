@@ -1,10 +1,10 @@
 abstract class Song {
 
-    protected String title;
+    protected String Title;
 
 
     public String getTitle() {
-        return title;
+        return Title;
     }
     public abstract int getLenght();
 
