@@ -1,19 +1,21 @@
 public class Main {
 
     public static void main(String[] args) {
-
-
-        Menu menu = new Menu();
+        Cd mp3Cd = new Mp3Cd("test");
         Writer writer = new ConsoleWriter();
+
+        //Menu menu = new Menu();
+
+        //Player CdPlayer = new Player();
         MenuItem cdPlayer = new MenuItem("Cd player", new CdActivity(writer));
-        menu.addItem(cdPlayer);
+        //menu.addItem(cdPlayer);
+        MenuItem spotifyPlayer = new MenuItem("Spotify player", new SpotifyActivity(writer));
+        //menu.addItem(spotifyPlayer);
        
-        Cd cd = new Mp3Cd("Hello World");
-        for (int i = 0; i < 10; i++) {
-            Song song = new AudioSong(i);
-            cd.addTracks(song);
-        }
-        Player player = new Player(writer,cd,PlayerMode.CD);
+
+        //menu.show();
+
+
 
     }
 }
