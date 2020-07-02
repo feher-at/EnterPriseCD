@@ -1,4 +1,5 @@
 public enum PlayerMode {
     CD,
-    SPOTIFY
+    SPOTIFY,
+    EXIT
 }

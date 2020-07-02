@@ -5,12 +5,12 @@ import  java.lang.*;
 public class Menu {
     private List<MenuItem> items;
     private  List<Writer> writers;
-    private Player player;
 
-    public Menu(Player player) {
+
+    public Menu() {
         items = new ArrayList<MenuItem>();
         writers = new ArrayList<Writer>();
-        this.player = player;
+
 
     }
 
@@ -20,8 +20,9 @@ public class Menu {
 
     public void show(){
     for(MenuItem item : items){
-        System.out.println(item.getTitle() + "\n");
+        System.out.println(item.getTitle());
     }
+        System.out.println("Exit");
     }
     public void addWriter(Writer writer){
         writers.add(writer);

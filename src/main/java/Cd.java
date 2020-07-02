@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 abstract class Cd {
     protected int limit;
-    protected ArrayList<Song> songs;
+    protected ArrayList<Song> songs = new ArrayList<Song>();
     protected String name;
 
 

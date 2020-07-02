@@ -9,6 +9,7 @@ public class ShowActivity implements Activity {
         System.out.println("1 : stop\n" +
                            "2 : start\n" +
                            "3 : next\n" +
-                           "4 : prev\n");
+                           "4 : prev\n" +
+                           "5 : exit");
     }
 }

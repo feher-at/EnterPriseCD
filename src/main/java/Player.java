@@ -15,11 +15,20 @@ public class Player {
         activity = new NextActivity(writer);
         activity.activate();
         whichTrack += 1;
+        if(whichTrack == cd.songs.size()){
+            whichTrack = 0;
+        }
     }
     public void prev(){
         activity = new PrevActivity(writer);
         activity.activate();
         whichTrack -= 1;
+        if(whichTrack == -1){
+            whichTrack = cd.songs.size()-1;
+        }
+
+
+
     }
     public void showPlayerMenu(){
         activity = new ShowActivity();
@@ -33,9 +42,9 @@ public class Player {
         activity = new StartActivity(writer);
         activity.activate();
     }
-    public void ShowInformation(){
-        writer.write(cd.name);
-        writer.write(cd.songs.get(whichTrack % cd.songs.size()).Title);
+    public void showInformation(){
+        writer.write("Current CD : " + cd.name);
+        writer.write("Current track : " + cd.songs.get(whichTrack).Title);
 
     }
 
@@ -53,6 +62,7 @@ public class Player {
                 this.cd = cd;
             }
         }
+       whichTrack = 0;
    }
    public void setMode(PlayerMode playerMode){
         this.playerMode = playerMode;
